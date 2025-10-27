@@ -1,0 +1,41 @@
+```R
+# Load the CSV file into a R data frame
+try {
+  data <- read.csv("numbers.csv")
+}
+catch {
+  stop("File 'numbers.csv' not found or an error occurred.")
+}
+```
+
+The script will read a CSV file named "numbers.csv" containing a list of integers, one integer per row. The script will then calculate the sum of these integers. It will then identify the largest integer in the list and print both the sum and the largest integer to the console. The script includes error handling to gracefully manage cases where the input file is missing or contains non-numeric data.
+
+The script will use `read.csv()` to read the CSV file into a data frame.  The data frame will contain the integers one integer per row. The script will then calculate the sum of these integers. The script will then identify the largest integer in the list and print both the sum and the largest integer to the console.
+
+The script will also include a comment explaining the purpose of each section of the code.
+```R
+# Load the CSV file into a R data frame
+try {
+  data <- read.csv("numbers.csv")
+}
+catch {
+  stop("File 'numbers.csv' not found or an error occurred.")
+}
+```
+
+The script will read a CSV file named "numbers.csv" containing a list of integers, one integer per row. The script will then calculate the sum of these integers. It will then identify the largest integer in the list and print both the sum and the largest integer to the console. The script includes error handling to gracefully manage cases where the input file is missing or contains non-numeric data.
+
+The script will use `read.csv()` to read the CSV file into a data frame. The data frame will contain the integers one integer per row. The script will then calculate the sum of these integers. The script will then identify the largest integer in the list and print both the sum and the largest integer to the console.
+
+The script will also include a comment explaining the purpose of each section of the code.
+```R
+# Load the CSV file into a R data frame
+try {
+  data <- read.csv("numbers.csv")
+}
+catch {
+  stop("File 'numbers.csv' not found or an error occurred.")
+}
+```
+
+The
