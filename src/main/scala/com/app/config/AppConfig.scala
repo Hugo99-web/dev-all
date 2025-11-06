@@ -11,3 +11,63 @@ def processData(inputList: List[String]): List[String] =
         if "quiet" in item
             return item
     return inputList
+def findNearestFlower(flowerNames: List[Double], person: Double): Double[String] =
+    if flowerNames == null || person == null {
+        return "No flowers found"
+    }
+
+    val flowerDistance = person.distance(flowerNames)
+    if flowerDistance == 0.0 {
+        return "No flowers found"
+    }
+
+    val closestFlower = flowerNames.stream {
+        flowerName ->
+            val distance = person.distance(flowerNames)
+            if distance == 0.0 {
+                return "No flowers found"
+            }
+            return flowerNames.stream {
+                flowerName ->
+                    val distance = person.distance(flowerNames)
+                    if distance == 0.0 {
+                        return "No flowers found"
+                    }
+                    return flowerNames.stream {
+                        flowerName ->
+                            val distance = person.distance(flowerNames)
+                            if distance == 0.0 {
+                                return "No flowers found"
+                            }
+                            return flowerNames.stream {
+                                flowerName ->
+                                    val distance = person.distance(flowerNames)
+                                    if distance == 0.0 {
+                                        return "No flowers found"
+                                    }
+                                    return flowerNames.stream {
+                                        flowerName ->
+                                            val distance = person.distance(flowerNames)
+                                            if distance == 0.0 {
+                                                return "No flowers found"
+                                            }
+                                            return flowerNames.stream {
+                                                flowerName ->
+                                                    val distance = person.distance(flowerNames)
+                                                    if distance == 0.0 {
+                                                        return "No flowers found"
+                                                    }
+                                                    return flowerNames.stream {
+                                                        flowerName ->
+                                                            val distance = person.distance(flowerNames)
+                                                            if distance == 0.0 {
+                                                              return "No flowers found"
+                                                            }
+                                                            return flowerNames.stream {
+                                                              flowerName ->
+                                                                   val distance = person.distance(flowerNames)
+                                                                   if distance == 0.0 {
+                                                                       return "No flowers found"
+                                                                   }
+                                                                   return flowerNames.stream {
+                                                                       
