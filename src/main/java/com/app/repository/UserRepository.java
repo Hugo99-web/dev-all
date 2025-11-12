@@ -42,3 +42,48 @@ public class InventoryManager {
         }
     }
 }
+public class SheepManagement {
+
+    public static void main(String[] args) {
+        int sheepCount = 10;
+        int stickCount = 10;
+
+        // Initialize the board with the initial number of "sheep"
+        int[] board = new int[sheepCount];
+        for (int i = 0; i < sheepCount; i++) {
+            board[i] = 0;
+        }
+
+        // Simulate the consumption of sheep
+        int totalConsumption = 0;
+        for (int i = 0; i < sheepCount; i++) {
+            int sheepConsumption = 0;
+            for (int j = 0; j < stickCount; j++) {
+                sheepConsumption += board[j];
+            }
+            totalConsumption += sheepConsumption;
+        }
+
+        // Print the initial number of sheep
+        System.out.println("Initial number of sheep: " + sheepCount);
+
+        // Simulate consumption
+        int currentSheep = sheepCount;
+        int remainingSheep = 0;
+        for (int i = 0; i < sheepCount; i++) {
+            int sheepConsumption = 0;
+            for (int j = 0; j < stickCount; j++) {
+                sheepConsumption += board[j];
+            }
+            remainingSheep -= sheepConsumption;
+            currentSheep -= sheepConsumption;
+        }
+        System.out.println("Remaining sheep after consumption: " + remainingSheep);
+
+        // Print the remaining number of sheep
+        System.out.println("Number of remaining sheep: " + remainingSheep);
+
+        // Print the number of remaining sticks
+        System.out.println("Number of remaining sticks: " + stickCount);
+    }
+}
