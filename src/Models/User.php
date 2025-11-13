@@ -47,3 +47,51 @@ function trainJourney(string $startingStation, string $destinationStation): void
 
     // Start the train journey
     simulateTrainJourney($current_time, $minutes);
+<?php
+/**
+ * Simulates a lottery ticket.
+ *
+ * @param string $number The random number between 1 and 49 (inclusive).
+ * @param string $powerball The Powerball number.
+ * @param string $house The house number.
+ * @return string The winner's name, or "No winner" if there is no winner.
+ */
+function simulateLotteryTicket(string $number, string $powerball, string $house) {
+
+    // Generate a random number between 1 and 49 (inclusive)
+    $randomNumber = rand(1, 49);
+
+    // Generate a random number between 1 and 12 (inclusive)
+    $randomNumber = rand(1, 12);
+
+    // Display the main number, Powerball number, and message
+    echo "Main Number: " . $randomNumber . "\n";
+    echo "Powerball Number: " . $powerball . "\n";
+    echo "Message: " . $house . "\n";
+
+    // Simulate a house (using a heading)
+    echo "House: " . $house . "\n";
+
+    // Round the number to the nearest whole number
+    $roundNumber = round($randomNumber, 2);
+
+    // Format the main number as a 12-digit number
+    $mainNumber = "12345";
+
+    // Display the main number, Powerball number, and message
+    echo "Main Number: " . $mainNumber . "\n";
+    echo "Powerball Number: " . $powerball . "\n";
+    echo "Message: " . $house . "\n";
+
+    return $mainNumber;
+}
+
+// Example usage:
+$number = 12345;
+$powerball = 11111;
+$house = "House";
+
+$winner = simulateLotteryTicket($number, $powerball, $house);
+
+echo $winner;
+?>
