@@ -52,3 +52,54 @@ int main(int argc, char *argv[]) {
       printf("Light color: %d\n", current_color);
     } else {
       printf
+#include <stdio.h>
+#include <stdlib.s>
+#include <string.h>
+
+int main(int argc, char *argv[]) {
+    FILE *filename;
+    int num;
+
+    // Get the filename from the command line arguments
+    if (argc == 1) {
+        filename = "/my_program/my_program.c";
+    } else if (argc == 2) {
+        filename = "/my_program/my_program.c";
+    } else {
+        // Handle invalid input.
+        // The program will crash if the user enters an invalid integer.
+        printf("Invalid input. Please enter a valid integer.\n");
+    }
+
+    // Launch the program
+    free(num);
+    num = 0;
+
+    // Prompt the user for input
+    while (num <= 100) {
+        // Check if the input is a valid integer
+        if (isdigit(num)) {
+            // If the input is a valid integer, print "Lucky"
+            if (num % 3 == 0 && num % 7 == 0 && num % 9 == 0) {
+                printf("Lucky!\n");
+            } else {
+                // If the input is not a valid integer, print "Dull"
+                printf("Dull!\n");
+            }
+        } else {
+            // If the input is not a valid integer, print "Invalid Input. Please enter a valid integer.\n"
+            printf("Invalid Input. Please enter a valid integer.\n");
+        }
+    }
+
+    // Exit the program
+    if (filename == NULL) {
+        fprintf(stderr, "Error: Could not find filename.\n");
+        return 0;
+    }
+
+    // Print the result
+    printf("Lucky: %d\n", num);
+    printf("Dull: %d\n", num);
+    return 0;
+}
