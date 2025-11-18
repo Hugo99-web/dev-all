@@ -54,3 +54,76 @@ fn main() -> std::io::Result<()> {
             }
         } else {
             // If the location doesn't have a "clean
+use std::{ranges, Vec::mut};
+use std::io::Error;
+
+// Define the Account struct
+struct Account {
+    account_number: String,
+    balance: i32,
+    name: String,
+}
+
+// Define the Vec of Account structs
+struct VecAccount {
+    account_number: String,
+    balance: i32,
+    name: String
+}
+
+// Define the deposit function
+fn deposit(account: &mut VecAccount, amount: i32) -> Result {
+    if account.balance <= 0 {
+        return Err(Error::NotFound)
+    }
+
+    try {
+        let amount = amount;
+        let result = deposit(account, amount);
+        println!("Deposit: ${result}");
+    } catch (error) {
+        Err::Error(error.message)
+    }
+}
+
+// Define the withdraw function
+fn withdraw(account: &mut VecAccount, amount: i32) -> Result {
+    if account.balance <= 0 {
+        return Err(Error::NotFound)
+    }
+
+    try {
+        let amount = amount;
+        let result = withdraw(account, amount);
+        println!("Withdrawal: ${result}");
+    } catch (error) {
+        Err::Error(error.message)
+    }
+}
+
+// Main function to simulate banking
+fn main() -> Result {
+    let mut accounts = VecAccount::new();
+    accounts.push(VecAccount::new(123));
+    accounts.push(VecAccount::new(456));
+    accounts.push(VecAccount::new(987));
+
+    println!("Initial balances:");
+    for (account_number, balance) in accounts.iter() {
+        println!("Account: {}", account_number);
+        println!("Balance: {}", balance);
+    }
+
+    // Deposit money
+    let amount = 100;
+    let result = deposit(accounts, amount);
+    if result.is_ok() {
+        println!("Deposit successful!");
+    } else {
+        println!("Deposit failed.");
+    }
+
+    // Withdraw money
+    let amount = 50;
+    let result = withdraw(accounts, amount);
+    if result.
