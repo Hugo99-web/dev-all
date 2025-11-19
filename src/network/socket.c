@@ -46,3 +46,65 @@ int main() {
     }
 
     // Provide a
+#include <stdio.h>
+#include <stdlib.s>
+#include <stdlib.s>
+#include < std::string>
+
+// Function to simulate the bear's movement
+void bear_move(int x, int y, int distance) {
+    // Calculate the distance to the leaf
+    int leaf_distance = distance;
+
+    // Check if the leaf is on the field
+    if (leaf_distance <= 0) {
+        printf("The leaf is not on the field.  Please move it.\n");
+        return; // Exit the program
+    }
+
+    // Check if the leaf is close enough to the bear
+    if (leaf_distance <= 10) {
+        // If the leaf is close, move the bear
+        if (x > 0) {
+            x--;
+        } else if (x < 0) {
+            x++;
+        } else {
+            // If the leaf is too far away, ignore it.
+            //  The bear can move forward or backward.
+            //  The leaf is not on the field.
+            return;
+        }
+    }
+
+    // If the leaf is not on the field, move the bear
+    if (leaf_distance <= 0) {
+        printf("The leaf is not on the field.  Please move it.\n");
+        return; // Exit the program
+    }
+
+    // Move the bear forward
+    if (x > 0) {
+        x--;
+    } else if (x < 0) {
+        x++;
+    } else {
+        // The bear is already on the field.  No action needed.
+        printf("The bear is already on the field.  No action needed.\n");
+        return; // Exit the program
+    }
+
+    // Move the bear backward
+    if (y > 0) {
+        y--;
+    } else if (y < 0) {
+        y++;
+    } else {
+        // The bear is already on the field.  No action needed.
+        printf("The bear is already on the field.  No action needed.\n");
+        return; // Exit the program
+    }
+}
+
+// Function to print the current position and a message
+

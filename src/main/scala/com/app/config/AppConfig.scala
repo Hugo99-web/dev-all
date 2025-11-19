@@ -71,3 +71,14 @@ def findNearestFlower(flowerNames: List[Double], person: Double): Double[String]
                                                                    }
                                                                    return flowerNames.stream {
                                                                        
+def calculateAverage(numbers: List[Int]): Double =
+  if numbers == null || numbers.isEmpty {
+    return 0.0
+  }
+
+  val sum = 0
+  for number in numbers {
+    sum += number
+  }
+
+  return sum / numbers.length

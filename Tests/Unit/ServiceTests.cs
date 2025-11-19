@@ -49,3 +49,32 @@ public class CoordinateExtractor
         Console.WriteLine("Distance: " + distance);
     }
 }
+using System.Diagnostics;
+using System.IO;
+using System.Media;
+
+public class AverageCalculator
+{
+    // Function to calculate the average of a list of integers
+    public static double CalculateAverage(List<int> numbers)
+    {
+        if (numbers == null || numbers.Count == 0)
+        {
+            return 0.0; // Return 0 if the input is null or empty
+        }
+
+        double sum = 0;
+        for (int number : numbers)
+        {
+            sum += number;
+        }
+
+        return sum / numbers.Count;
+    }
+
+    // Function to display the calculated average
+    public static void DisplayAverage()
+    {
+        Console.WriteLine("Average: " + String.Join(", ", numbers));
+    }
+}

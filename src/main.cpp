@@ -55,3 +55,53 @@ public:
     }
 
     // Function to handle the case where the worm moves off the grid
+#include <iostream>
+#include <algorithm>
+
+using namespace std::cout;
+
+// Function to simulate a shop
+void shop_simulation(int item_list[], int num_items) {
+    // Input validation
+    if (num_items <= 0) {
+        std::cerr << "Invalid number of items. Please enter a positive number." << std::endl;
+        return;
+    }
+
+    // Input validation
+    for (int i = 0; i < num_items; ++i) {
+        if (i % 2 == 0) {
+            std::cout << "Invalid item: Item not found." << std::endl;
+        } else {
+            std::cout << "Invalid item: Item must be an item name." << std::endl;
+        }
+    }
+
+    // Calculate the remaining balance
+    int remaining_balance = 100;
+
+    // Calculate the price of the selected item
+    int price = remaining_balance / 1.2;
+
+    // Display the price
+    std::cout << "Price of " << item_list[i] << " is: " << price << std::endl;
+
+    // If the user chooses to buy, deduct the item's price
+    if (price > remaining_balance) {
+        std::cout << "Insufficient balance.  Proceed to buy." << std::endl;
+        remaining_balance = 0;
+    } else {
+        std::cout << "You have enough money to buy " << item_list[i] << "!" << std::endl;
+    }
+
+    // Handle the "buy" button
+    if (remaining_balance >= price) {
+        std::cout << "You have enough money to buy " << item_list[i] << "!" << std::endl;
+        remaining_balance = price;
+    } else {
+        std::cout << "You can't buy " << item_list[i] << "!" << std::endl;
+    }
+
+    // Output the remaining balance
+    std::cout << "Remaining balance: " << remaining_balance << std::endl;
+}
