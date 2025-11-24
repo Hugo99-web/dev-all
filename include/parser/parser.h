@@ -47,3 +47,41 @@ int main() {
   // The program displays a confirmation message.
 
   // Get the user
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    // Declare variables to store the input integer
+    int num;
+    int result;
+
+    // Prompt the user for input
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    // Check if the input is a valid integer
+    if (num <= 0) {
+        printf("Please enter a positive integer.\n");
+        return 1; // Indicate an error
+    }
+
+    // Perform the primality test
+    result = num;
+    while (result != 0) {
+        // Prompt the user for a number
+        printf("Enter a number: ");
+        scanf("%d", &result);
+
+        // Check if the number is a prime number
+        if (result % 2 == 0) { // Check if the remainder is 0 or 1
+            printf("The number is prime.\n");
+        } else {
+            // If the number is not prime, print an error message
+            printf("Error: The number is not a prime number.\n");
+        }
+    }
+
+    // Print the result
+    printf("The number %d is prime.\n", result);
+    return 0; // Indicate successful program execution
+}
