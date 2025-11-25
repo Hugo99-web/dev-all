@@ -1,0 +1,18 @@
+def calculate_average(numbers):
+    """
+    Calculates the average of a list of numbers.
+
+    Args:
+        numbers: A list of numbers.
+
+    Returns:
+        The average of the numbers in the list.
+    """
+
+    try:
+        total = sum(numbers)  # Calculate the sum of all numbers in the list
+        average = total / len(numbers)  # Calculate the average
+        print("The average is:", average)  # Print the calculated average
+    except Exception as e:
+----------
+    print("An error occurred:", e)  # Handle potential exceptions
