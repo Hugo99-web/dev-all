@@ -84,3 +84,87 @@ func main() {
     // result := StampItem(inventory)
     // fmt.Printf("Stamp result: %+v\n", result)
 }
+package main
+
+// TreasureMap represents the treasure map.
+type TreasureMap struct {
+    treasure: string
+    map: []string
+}
+
+//  treasureMap represents the treasure map.
+type TreasureMap struct {
+    treasure: string
+    map: []string
+}
+
+//  treasureMap to store the treasure name.
+type TreasureMap struct {
+    treasure: string
+    map: []string
+}
+
+//  treasureMap to store the treasure name.
+type TreasureMap struct {
+    treasure: string
+    map: []string
+}
+
+//  treasureMap to store the treasure name.
+type TreasureMap struct {
+    treasure: string
+    map: []string
+}
+
+//  treasureMap to store the treasure name.
+type TreasureMap struct {
+    treasure: string
+    map: []string
+}
+
+//  find_treasure moves the user to the next clue.
+//  The clue is represented as a string.
+//  The user needs to guess the treasure based on the clues.
+//  The function should return the treasure name if the guess is correct.
+//  If the guess is incorrect, it should return the treasure name.
+func find_treasure(userName string) string {
+    try{
+        // Get the current treasure name
+        treasure := userName
+        //  Get the current treasure name
+        treasure := userName
+
+        //  Get the current treasure name
+        treasure := userName
+
+        //  Get the current treasure name
+        treasure := userName
+
+        //  Get the treasure name
+        treasure := userName
+
+        //  Check if the current treasure name is already in the map
+        if treasure == treasure {
+            return treasure
+        }
+
+        //  Check if the current treasure name is not already in the map
+        if treasure != treasure {
+            return treasure
+        }
+
+        //  Check if the current treasure name is not already in the map
+        if treasure != treasure {
+            return treasure
+        }
+
+        //  Check if the current treasure name is not already in the map
+        if treasure != treasure {
+            return treasure
+        }
+
+        //  If the user guesses correctly, return the treasure name.
+        return treasure
+    }
+    return "Incorrect guess." // Return the incorrect guess.
+    
