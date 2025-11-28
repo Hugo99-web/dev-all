@@ -11,3 +11,20 @@ function calculateArea(width: number, height: number) {
     return width * height; // Return the calculated area as height * width
   }
 }
+function calculateArea(width: number, height: number) {
+  if (typeof width !== 'number' || typeof height !== 'number') {
+    return null;
+  }
+
+  if (width <= 0 || height <= 0) {
+    return null;
+  }
+
+  const area = width * height;
+
+  if (area <= 0) {
+    return null;
+  }
+
+  return area;
+}

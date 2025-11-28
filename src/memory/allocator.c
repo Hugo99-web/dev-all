@@ -47,3 +47,42 @@ int main() {
   // Finish the program
   printf("All cows have been added.  Milk production is: %d\n", cow_milk_count);
   printf("Number of milk produced by each cow: %d
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  int num;
+
+  // Prompt the user for input
+  printf("Enter an integer: ");
+  scanf("%d", &num);
+
+  // Validate the input
+  if (num <= 0) {
+    printf("Please enter a positive integer.\n");
+    return 1; // Indicate an error
+  }
+
+  // Allocate memory for the integer
+  num = 10;
+
+  // Loop through the digits of the number
+  for (int i = 0; i < num; ++i) {
+    // Check if the digit is a digit
+    if (isdigit(num)) {
+      // Check if the digit is a digit
+      if (num % 10 == 0) {
+        printf("Number is a full number.\n");
+      }
+    }
+  }
+
+  // Output the number
+  if (num == 10) {
+    printf("The number is a full number.\n");
+  } else {
+    printf("The number is a dull number.\n");
+  }
+
+  return 0; // Indicate successful execution
+}

@@ -29,3 +29,20 @@ print("The species that hates is:", df$habitat_type)
 num_run_species <- length(df$habitat_type)
 print("The species that runs is:", num_run_species)
 ```
+```R
+# Function calculate_average_score
+calculate_average_score <- function(scores) {
+  # Check if the input vector is empty
+  if (length(scores) == 0) {
+    return "NA"
+  }
+
+  # Calculate the average score
+  average_score <- sum(scores) / length(scores)
+
+  # Round the average score to two decimal places
+  average_score <- average_score.round(average_score, 2)
+
+  return(average_score)
+}
+```
