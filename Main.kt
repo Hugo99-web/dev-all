@@ -72,3 +72,39 @@ class BankAccount {
             println("Transactions:")
             for (transaction in balance) {
 
+import java.util.HashMap
+import java.util.Map
+
+fun main() {
+    // Prompt the user for their choice
+    val choice = getUserChoice()
+
+    // Prompt the user for their opponent's choice
+    val opponentChoice = getUserChoice()
+
+    // Determine the winner based on the standard rules
+    val winner = findWinner(choice)
+
+    // Display the results
+    println("You chose: " + choice)
+    println("Your opponent chose: " + opponentChoice)
+    println("The winner is: " + winner)
+}
+
+// Function to get user choice
+fun getUserChoice() {
+    val choice = getUserChoice()
+    return choice
+}
+
+// Function to find the winner
+fun findWinner(choice) {
+    val winner = null
+    for (otherChoice in choice) {
+        if (choice.equals(otherChoice)) {
+            winner = otherChoice
+            break;
+        }
+    }
+    return winner
+}
