@@ -17,3 +17,15 @@ def calculateTotalCost(items: List[String]): Double =
 
     return 0.0
   }
+def calculateAverage(numbers: List[Int]): Double =
+  if numbers == null || numbers.isEmpty {
+    return 0.0
+  }
+
+  sum = 0.0
+  for number in numbers {
+    sum += number
+  }
+
+  average = sum / numbers.length
+  return average
