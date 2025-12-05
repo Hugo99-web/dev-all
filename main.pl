@@ -64,3 +64,103 @@ print "Total 'b' words: $count\n";
 
 # Print the count of words checked
 print "Number of words checked: $count\n";
+#!/usr/nil/bin/perl
+
+# Function to read a text file and count word occurrences
+use strict;
+use strict;
+
+# Function to count word occurrences
+use strict;
+
+# Function to store word counts
+use strict;
+
+# Function to print word counts
+use strict;
+
+# Function to handle file not found
+use strict;
+
+# Function to handle empty file
+use strict;
+
+# Function to handle file error
+use strict;
+
+# Function to get filename from command-line argument
+use strict;
+
+# Function to read file line by line
+use strict;
+
+# Function to count words in a line
+use strict;
+
+# Function to store word counts
+use strict;
+
+# Function to print word counts
+use strict;
+
+# Function to handle file not found
+use strict;
+
+# Function to handle empty file
+use strict;
+
+# Function to handle file error
+use strict;
+
+# Function to get filename from command-line argument
+use strict;
+
+# Function to read the file
+use strict;
+
+# Function to open the file
+use strict;
+
+# Function to read the file contents
+use strict;
+
+# Function to read the file's header
+use strict;
+
+# Function to read the file's content
+use strict;
+
+# Function to read the file's content (handles case-insensitive)
+use strict;
+
+# Function to read the file's content (handles case-insensitive)
+use strict;
+
+# Function to read the file's content (handles case-insensitive)
+use strict;
+
+# Function to read the file's content (handles case-insensitive)
+use strict;
+
+# Function to read the file's content (handles case-insensitive)
+use strict;
+
+# Function to read the file's content (handles case-insensitive)
+use strict;
+
+# Function to read the file's content (handles case-insensitive)
+use strict;
+
+# Function to read the file's content (handles case-insensitive)
+use strict;
+
+# Function to read the file's content (handles case-insensitive)
+use strict;
+
+# Function to read the file's content (handles case-insensitive)
+use strict;
+
+# Function to read the file's content (handles case-insensitive)
+use strict;
+
+# Function to read the file

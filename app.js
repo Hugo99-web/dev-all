@@ -16,3 +16,11 @@ function findNearestTree(coordinates, target) {
 
   return closest;
 }
+function calculateArea(width, height) {
+  if (!Number.isInteger(width) || !Number.isInteger(height)) {
+    return "Invalid input: Width and height must be numbers.";
+  }
+
+  const area = width * height;
+  return area;
+}
