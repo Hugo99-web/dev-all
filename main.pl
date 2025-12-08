@@ -164,3 +164,66 @@ use strict;
 use strict;
 
 # Function to read the file
+#!/usr/nil/bin/perl
+
+# Function to calculate the average of a list of numbers
+sub calculate_average {
+  # Check if the input list is empty
+  if (empty($#input)) {
+    print "No numbers provided\n";
+    exit 1;
+  }
+
+  # Initialize the average to 0
+  local average = 0;
+
+  # Iterate through each number in the input list
+  for ($i = 0; $i < count($input); $i++) {
+    # Check if the number is a valid number
+    if ($i + 1) < count($input) {
+      # Check if the number is a valid number
+      if ($i + 1) == count($input) {
+        # Calculate the average
+        average = average + $i;
+      } else {
+        # If the number is not a valid number, print an error message and exit
+        print "Invalid input: $i is not a valid number.\n";
+        exit 1;
+      }
+    }
+  }
+
+  # Return the calculated average
+  return average;
+}
+
+# Function to count the number of elements in the list
+sub count($input) {
+  # Initialize the count to 0
+  local count = 0;
+
+  # Iterate through each element in the input list
+  for ($i = 0; $i < count($input); $i++) {
+    # Check if the number is a valid number
+    if ($i + 1) < count {
+      # Check if the number is a valid number
+      if ($i + 1) == count($input) {
+        # Calculate the average
+        count = count + 1;
+      } else {
+        # If the number is not a valid number, print an error message and exit
+        print "Invalid input: $i is not a valid number.\n";
+        exit 1;
+      }
+    }
+  }
+
+  # Return the count
+  return count;
+}
+
+# Function to calculate the average of a list of numbers
+sub calculate_average_list {
+  # Check if the input list is empty
+  if (empty($#input)) {
+    print "No numbers provided\
