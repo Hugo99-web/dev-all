@@ -55,3 +55,30 @@ print("Weather station location:", weather_station_location)
 print("Weather condition:", weather_condition)
 print("Drink suggestion:", drink_suggestion)
 print
+function weatherForecast(currentDate, timeAfter12pm)
+  local weather = "rain"
+  local weatherCondition = "rain"
+
+  if currentDate >= 12:
+    weather = "rain"
+  elif timeAfter12pm > 12:
+    weather = "snow"
+  else:
+    weather = "cloudy"
+  end
+
+  // Display the weather condition
+  if weather == "rain":
+    print("The weather today is rainy.")
+  elif weather == "snow":
+    print("It's snowing today!")
+  else:
+    print("Expect cloudy skies.")
+  end
+
+  // Add a simple "watch" feature
+  if weather == "rain" or weather == "snow":
+    print("Be careful, there might be flooding.")
+  else:
+    print("Be careful, there might be flooding.")
+end

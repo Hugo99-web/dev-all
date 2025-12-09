@@ -13,3 +13,15 @@ function findHappyThings(inputArray) {
 
   return happyStrings;
 }
+function calculateArea(width, height) {
+  try {
+    if (typeof width !== 'number' || typeof height !== 'number') {
+      return "Invalid input: Width and height must be numbers.";
+    }
+
+    const area = width * height;
+    return area;
+  } catch (error) {
+    return "Invalid input: Width and height must be numbers.";
+  }
+}
