@@ -71,3 +71,10 @@ struct Train {
     }
 
     //
+func calculateArea(width: Float, height: Float) -> Float {
+  if width <= 0 || height <= 0 {
+    return 0.0
+  }
+
+  return width * height
+}
