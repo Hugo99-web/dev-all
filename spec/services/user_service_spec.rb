@@ -39,3 +39,22 @@ end
 if __name__ == '__main__':
   food_items = ["fish", "flower", "candle"]
   order_restaurant_system(food_items)
+require 'time'
+
+def weather_forecast(city_name)
+  # Simulate a weather forecast based on the city name
+  try
+    # Generate a random number between 0 and 100
+    random_number = rand(100)
+    
+    # Calculate the probability of rain
+    rain_probability = random_number / 100
+    
+    # Print the forecast
+    puts "City: #{city_name}, Probability of rain: #{rain_probability}"
+  except Exception as e:
+    puts "Error: #{e}"
+end
+
+# Call the function to generate the weather forecast
+weather_forecast("London")

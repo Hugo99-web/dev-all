@@ -31,3 +31,28 @@ print(town_data_sorted)
 ggplot(data_frame, aes(color = town, size = 1)) +
   geom_line(x = town_data_sorted$town, y = town_data_sorted$price)
 ```
+```R
+library(dplyr)
+
+# Create a data frame with at least two columns: "parcel_id" (character) and "weight_kg" (numeric).
+# The data frame should have at least 10 rows, including some parcels that are too light and some that are too heavy.
+# The "parcel_id" column should be "kind" and the "weight_kg" column should be "foot" and "band".
+
+# Filter the data frame to include only parcels with a weight greater than 10 kg.
+# The function will return the average weight of the parcels that meet this criteria.
+# The data frame will be modified to include the parcels with a weight greater than 10 kg.
+# The "parcel_id" column will be "kind" and the "weight_kg" column will be "foot" and "band".
+# The function will return the average weight as a numeric value.
+# The function will include a comment explaining the purpose of the function and the steps it takes.
+# The data frame will be a "tiny" example with at least 10 rows, including some parcels that are too light and some that are too heavy.
+# The "parcel_id" column will be "kind" and the "weight_kg" column will be "foot" and "band".
+# The function will return the average weight as a numeric value.
+# The function will include a comment explaining the purpose of the function and the steps it takes.
+# The data frame will be a "tiny" example with at least 10 rows, including some parcels that are too light and some that are too heavy.
+# The "parcel_id" column will be "kind" and the "weight_kg" column will be "foot" and "band".
+# The function will return the average weight as a numeric value.
+# The function will include a comment explaining the purpose of the function and the steps it takes.
+# The data frame will be a "tiny" example with at least 10 rows, including some parcels that are too light and some that are too heavy.
+# The "parcel_id" column will be "kind" and the "weight_kg" column will be "foot" and "band".
+# The function will return the average weight as a numeric value.
+# The
