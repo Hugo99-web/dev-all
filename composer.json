@@ -1,0 +1,68 @@
+<?php
+/**
+ * Simulates a bird feeder system
+ */
+
+use Zend_API\API;
+use Zend_API\API_Handler;
+
+// Define the Bird Object class
+class Bird {
+    public $name;
+    public $hunger = 0;
+    public $height = 0;
+    public $size = 1;
+    public $health = 0;
+    public $frequency = 1;
+    public $age = 0;
+    public $location = 'location'; // Replace with your location
+
+    // Define the Feeding Event object
+    public function feeding_event( $bird_id, $event_type, $frequency, $age, $location ) {
+        // Check if the bird is a valid bird
+        if ( !is_bird($bird_id) ) {
+            return "Error: Invalid bird ID.";
+        }
+
+        // Check if the bird has hunger
+        if ( $hunger < 0 ) {
+            return "Error: Bird has hunger."
+        }
+
+        // Check if the bird has a height
+        if ( $height < 0 ) {
+            return "Error: Bird has height."
+        }
+
+        // Check if the bird has a size
+        if ( $size < 1 ) {
+            return "Error: Bird has size."
+        }
+
+        // Check if the bird has a health
+        if ( $health < 0 ) {
+            return "Error: Bird has health."
+        }
+
+        // Check if the bird has a frequency
+        if ( $frequency < 1 ) {
+            return "Error: Bird has frequency."
+        }
+
+        // If the bird has a frequency, increment the hunger level
+        if ( $frequency > 1 ) {
+            $hunger += $frequency;
+        }
+
+        // If the bird has a frequency, decrease the hunger level
+        if ($frequency == 1 ) {
+            $hunger -= $frequency;
+        }
+
+        // If the bird has a hunger level, update the bird's health
+        if ( $hunger > 0 ) {
+            $health += $hunger;
+        }
+
+        // Return the name and final hunger level
+        return "Bird: " . $name . " - Hunger
