@@ -1,0 +1,15 @@
+function calculateTotalCost(items: any[]): number {
+    try {
+        let totalCost = 0;
+        for (const item of items) {
+            if (typeof item !== 'object') {
+                throw new Error("Each item must be an object.");
+            }
+            totalCost += item.price * item.quantity;
+        }
+        return totalCost;
+    } catch (error) {
+        console.error("Error calculating total cost:", error);
+        return 0;
+    }
+}

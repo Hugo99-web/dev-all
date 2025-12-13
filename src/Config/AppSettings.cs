@@ -60,3 +60,64 @@ public class InventoryManagement
         Console.WriteLine("Total value: " + inventory.Sum());
     }
 }
+using System;
+
+public class SumCalculator
+{
+    // Function to calculate the sum of a list of integers
+    public static int CalculateSum(List<int> numbers)
+    {
+        int sum = 0;
+        for (int number : numbers)
+        {
+            sum += number;
+        }
+        return sum;
+    }
+
+    // Function to check if a number is a positive, negative, or zero number
+    public bool IsPositive(int number)
+    {
+        return number > 0;
+    }
+
+    // Function to check if a number is a positive, negative, or zero number
+    public bool IsNegative(int number)
+    {
+        return number < 0;
+    }
+
+    // Function to calculate the sum of a list of integers
+    public static int CalculateSumList(List<int> numbers)
+    {
+        int sum = 0;
+        for (int number : numbers)
+        {
+            sum += number;
+        }
+        return sum;
+    }
+
+    // Function to display the sum of the list of integers
+    public void DisplaySum(int sum)
+    {
+        Console.WriteLine("Sum of the list of integers: " + sum);
+    }
+
+    // Function to handle potential errors
+    public void HandleError(int number)
+    {
+        if (IsPositive(number))
+        {
+            Console.WriteLine("Number is positive");
+        }
+        else if (IsNegative(number))
+        {
+            Console.WriteLine("Number is negative");
+        }
+        else if (IsZero(number))
+        {
+            Console.WriteLine("Number is zero");
+        }
+    }
+}
