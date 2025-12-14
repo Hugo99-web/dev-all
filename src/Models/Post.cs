@@ -38,3 +38,52 @@ public class FarmSimulation
         Console.WriteLine("Number of animals in roaming: " + boxesAvailable);
     }
 }
+using System.Exception;
+
+public class AverageCalculator
+{
+    // Function to calculate the average of a comma-separated list of numbers.
+    public static double CalculateAverage(string inputList)
+    {
+        try
+        {
+            // Check if the input is a valid comma-separated list.
+            if (inputList == null || inputList.Length == 0)
+            {
+                return 0.0; // Return 0.0 to indicate an error.
+            }
+
+            // Split the input list into individual numbers.
+            string[] numbers = inputList.Split(",");
+
+            // Check if the list is empty.
+            if (numbers == null)
+            {
+                return 0.0; // Return 0.0 to indicate an error.
+            }
+
+            // Calculate the average.
+            double sum = 0.0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                sum += numbers[i];
+            }
+
+            // Calculate the average.
+            double average = sum / numbers.Length;
+            return average;
+        }
+        catch (FormatException)
+        {
+            // Handle the case where the input is not a valid comma-separated list.
+            Console.WriteLine("Error: Invalid input. Please enter a comma-separated list of numbers.");
+            return 0.0; // Return 0.0 to indicate an error.
+        }
+        catch (Exception e)
+        {
+            // Handle any other exceptions that might occur during the calculation.
+            Console.WriteLine("An unexpected error occurred.  Please try again.");
+            return 0.0; // Return 0.0 to indicate an error.
+        }
+    }
+}
