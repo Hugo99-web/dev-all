@@ -1,0 +1,36 @@
+public class FishFinder {
+
+    public static void main(String[] args) {
+        // Create a 5x5 grid filled with seed values (representing the initial state of the water).
+        int gridWidth = 5;
+        int gridHeight = 5;
+
+        // Allow the user to "play" the game by entering an x and y coordinate.
+        int playerX = 0;
+        int playerY = 0;
+
+        // If the user enters a valid coordinate within the grid, the program should "brush" the area around that coordinate, changing the "seed" values to a new value (e.g., a random number between 1 and 10).
+        if (playerX >= 0 && playerX < gridWidth && playerY >= 0 && playerY < gridHeight) {
+            System.out.println("You entered coordinates: " + gridWidth + "x " + gridHeight + "y");
+        } else {
+            System.out.println("Invalid coordinate entered. Please enter a valid coordinate.");
+        }
+
+        // The program should display the current state of the grid.
+        System.out.println("Current state of the grid: " + gridWidth + "x " + gridHeight + "y");
+
+        // The program should handle invalid input (e.g., non-numeric input or coordinates outside the grid).
+        try {
+            // Attempt to read the coordinates from the user.
+            int x = Integer.parseInt(input); // Convert the user's input to an integer
+            int y = Integer.parseInt(input); // Convert the user's input to an integer
+            if (x >= 0 && x < gridWidth && y >= 0 && y < gridHeight) {
+                System.out.println("You entered coordinates: " + x + "y");
+            } else {
+                System.out.println("Invalid coordinate entered. Please enter a valid coordinate.");
+            }
+        } catch (IllegalArgumentException e) {
+            System.err.println("Error: " + e.getMessage()); // Print an error message to the console
+        }
+    }
+}

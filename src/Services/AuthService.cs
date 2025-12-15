@@ -61,3 +61,30 @@ class BankAccount {
     }
 
     // Method to display the current balance
+using System;
+
+public class SumCalculator
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter a list of integers: ");
+        string inputString = Console.ReadLine();
+
+        if (inputString.ToLower() == "red")
+        {
+            Console.WriteLine("Positive");
+        }
+        else if (inputString.ToLower() == "blue")
+        {
+            Console.WriteLine("Negative");
+        }
+        else if (inputString.ToLower() == "green")
+        {
+            Console.WriteLine("Zero");
+        }
+        else
+        {
+            Console.WriteLine("Invalid input. Please enter a string representing a color (e.g., 'red', 'blue', 'green').");
+        }
+    }
+}
