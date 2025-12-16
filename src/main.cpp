@@ -105,3 +105,65 @@ void shop_simulation(int item_list[], int num_items) {
     // Output the remaining balance
     std::cout << "Remaining balance: " << remaining_balance << std::endl;
 }
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std::cout;
+
+class VendingMachine {
+public:
+    int code;
+    std::string productCode;
+    int productPrice;
+
+    void displayProducts(const std::vector<std::string>& products) {
+        std::cout << "---------------------------------------" << std::endl;
+        std::cout << "Product Code: " << code << std::endl;
+        std::cout << "Product Price: $" << productPrice << std::endl;
+    }
+
+    void processProduct(const std::string& productCode) {
+        if (productCode == "A1") {
+            std::cout << "Dispensing A1 product." << std::endl;
+            return;
+        }
+
+        std::cout << "---------------------------------------" << std::endl;
+        std::cout << "Product Code: " << code << std::endl;
+        std::cout << "Product Price: $" << productPrice << std::endl;
+    }
+
+    void dispenseProduct(const std::string& productCode) {
+        if (productCode == "B2") {
+            std::cout << "Dispensing B2 product." << std::endl;
+            return;
+        }
+
+        std::cout << "---------------------------------------" << std::endl;
+        std::cout << "Product Code: " << code << std::endl;
+        std::cout << "Product Price: $" << productPrice << std::endl;
+    }
+
+    std::string getProductCode() const {
+        return code;
+    }
+
+    int getProductPrice() const {
+        return productPrice;
+    }
+
+    // Basic input validation
+    bool isValidProduct(const std::string& productCode) {
+        std::string inputCode = productCode;
+        if (inputCode == "A1") {
+            return true; // Valid code
+        }
+        if (inputCode == "B2") {
+            return true; // Valid code
+        }
+        return false; // Invalid code
+    }
+
+    void displayProducts(const std::vector<std::string>& products) {
+        std::cout << "---------------------------------------
