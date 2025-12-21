@@ -85,3 +85,55 @@ result_error <- filter_numbers(error_vector)
 # Print the error message
 print(result_error)
 ```
+```R
+# Function to calculate the standard deviation of a vector of numbers
+calculate_standard_deviation <- function(data, n) {
+  if (length(data) == 0) {
+    return(0)  # Return 0 if the input vector is empty.
+  }
+
+  if (length(data) == 1) {
+    return(data)  # Return the entire vector as a single number.
+  } else {
+    # Handle the case where the input vector has a length of 1.
+    # This prevents division by zero and handles edge cases.
+    return(0)
+  }
+}
+
+# Function to calculate the mean of a vector of numbers
+calculate_mean <- function(data, n) {
+  if (length(data) == 0) {
+    return(0)  # Return 0 if the input vector is empty.
+  }
+
+  if (length(data) == 1) {
+    return(data)  # Return the entire vector as a single number.
+  } else {
+    # Handle the case where the input vector has a length of 1.
+    return(mean(data)) # Calculate the mean of the vector.
+  }
+}
+
+# Function to calculate the standard deviation of a vector of numbers
+calculate_standard_deviation_formula <- function(data, n) {
+  if (length(data) == 0) {
+    return(0)  # Return 0 if the input vector is empty.
+  }
+
+  if (length(data) == 1) {
+    return(data)  # Return the entire vector as a single number.
+  } else {
+    # Handle the case where the input vector has a length of 1.
+    return(calculate_standard_deviation(data))  # Calculate the standard deviation of the vector.
+  }
+}
+
+# Main function to calculate the standard deviation of the input vector
+calculate_standard_deviation_main <- function(data) {
+  if (length(data) == 0) {
+    return(0)  # Return 0 if the input vector is empty.
+  }
+
+  if (length(data) == 1) {
+    return(data)  # Return the entire vector as

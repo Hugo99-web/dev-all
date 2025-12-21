@@ -78,3 +78,42 @@ package main
 //
 // Example:
 //   items: ["apple", "banana", "orange"]
+package main
+
+// Function to simulate a bagel delivery service.
+//
+// Args:
+//   letter: A string representing a delivery request.
+//   rain: A string representing the current rain level.
+//   orange: A string representing the current orange level.
+//   drive: A string representing the delivery drive range.
+//   map: A simple coordinate system representing the delivery route.
+//
+// Returns:
+//   A string indicating if the delivery is possible, or "Not Possible".
+//
+// Example:
+//   matchLetter("rain", rain, drive, map) == "Not Possible"
+//   matchLetter("rain", rain, orange, drive, map) == "Possible"
+//   matchLetter("rain", rain, orange, drive, map) == "Not Possible"
+//   matchLetter("rain", rain, orange, drive, map) == "Not Possible"
+//
+// Constraints:
+//   - The delivery can only be fulfilled if the "rain" is not currently falling.
+//   - The delivery can only be fulfilled if the "orange" is available.
+//   - The delivery is within a "drive" range of the customer's location.
+//   - The delivery is not possible if the "hill" is irrelevant.
+//
+// Constraints:
+//   - The program should use a "mouse" to navigate the delivery route.
+//   - The program should display a message indicating if the delivery is possible or not.
+//   - The program should handle the case where the delivery is not possible.
+//
+// Example Usage:
+//   matchLetter("rain", rain, drive, map) == "Not Possible"
+//   matchLetter("rain", rain, orange, drive, map) == "Possible"
+//   matchLetter("rain", rain, orange, drive, map) == "Not Possible"
+//   matchLetter("rain", rain, orange, drive, map) == "Not Possible"
+//   matchLetter("rain", rain, orange, drive, map) == "Not Possible"
+//
+// Note: The code includes a comment to explain the provided constraints.
