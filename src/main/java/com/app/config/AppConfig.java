@@ -34,3 +34,48 @@ public class WeatherStation {
         }
     }
 }
+public class DogWalking {
+
+    public static void main(String[] args) {
+        String name = "Buddy";
+        String owner = "Sarah";
+        String startingLocation = "home";
+
+        System.out.println("Dog is being walked by the owner: " + name + " - " + owner + " - " + startingLocation);
+
+        // Option 1: Using a string to represent the dog's name
+        String name2 = "Buddy";
+        String owner2 = "Sarah";
+        String startingLocation2 = "home";
+
+        System.out.println("Dog is being walked by the owner: " + name2 + " - " + owner2 + " - " + startingLocation2);
+
+        // Option 2:  Using a string to represent the dog's name
+        String name3 = "Buddy";
+        String owner3 = "Sarah";
+        String startingLocation3 = "home";
+
+        System.out.println("Dog is being walked by the owner: " + name3 + " - " + owner3 + " - " + startingLocation3);
+
+        // Option 3: Using a string to represent the dog's name
+        String name4 = "Buddy";
+        String owner4 = "Sarah";
+        String startingLocation4 = "home";
+
+        System.out.println("Dog is being walked by the owner: " + name4 + " - " + owner4 + " - " + startingLocation4);
+
+        // Option 4:  Using a string to represent the dog's name
+        String name5 = "Buddy";
+        String owner5 = "Sarah";
+        String startingLocation5 = "home";
+
+        System.out.println("Dog is being walked by the owner: " + name5 + " - " + owner5 + " - " + startingLocation5);
+
+        // Option 5: Using a string to represent the dog's name
+        String name6 = "Buddy";
+        String owner6 = "Sarah";
+        String startingLocation6 = "home";
+
+        System.out.println("Dog is being walked by the owner: " + name6 + " - " + owner6 + " - " + startingLocation6);
+
+        // Option 6:  Using a string to represent the

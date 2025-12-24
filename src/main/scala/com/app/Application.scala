@@ -35,3 +35,15 @@ object BankAccount {
     println("Withdrawal Result: $withdrawalResult")
   }
 }
+def trainJourney(startLocation: String, destinationLocation: String): String
+  def simulateJourney(startLocation: String, destinationLocation: String): String
+    try {
+      if startLocation == destinationLocation {
+        return "Train started at " + startLocation
+      } else {
+        return "Train is not at the destination.  Journey is taking " +  (simulateJourney(startLocation, destinationLocation)) + " hours."
+      }
+    } catch {
+      return "Error: Could not simulate the journey."
+    }
+  }

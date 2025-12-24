@@ -88,3 +88,53 @@ public class SumCalculator
         }
     }
 }
+using System;
+using System.Input;
+
+public class StringVowelCounter
+{
+    public static int GetVowelCount(string input)
+    {
+        try
+        {
+            // Check if the input is a string
+            if (input == null)
+            {
+                return 0; // Return 0 for an empty string
+            }
+
+            // Check if the input is a valid string
+            if (input == "hello")
+            {
+                return 1; // Return 1 for the first vowel
+            }
+
+            // Convert the string to a number
+            int vowelCount = 0;
+            for (int i = 0; i < input.Length; i++)
+            {
+                char currentChar = input[i];
+                if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o' || currentChar == 'u')
+                {
+                    vowelCount++;
+                }
+            }
+
+            // Return the number of vowels
+            return vowelCount;
+        }
+        catch (Exception ex)
+        {
+            // Handle potential errors, such as invalid input or non-string input
+            Console.WriteLine("Error: Invalid input. Please enter a string.");
+            return 0; // Return 0 for an empty string
+        }
+    }
+
+    public static void Main(string[] args)
+    {
+        string input = "Hello World!";
+        int vowelCount = GetVowelCount(input);
+        Console.WriteLine("The number of vowels in \"" + input + "\" is: " + vowelCount);
+    }
+}

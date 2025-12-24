@@ -78,3 +78,35 @@ func calculateArea(width: Float, height: Float) -> Float {
 
   return width * height
 }
+import Foundation
+
+// Function to get the number of animals in a dictionary
+func getAnimalCount(dictionary: [String]) -> Int {
+    // Create a variable to store the total number of animals
+    totalAnimals = 0
+
+    // Iterate through the dictionary and check if each key is a string
+    for key in dictionary {
+        if key.contains("animal") {
+            totalAnimals += 1
+        }
+    }
+
+    // Return the total number of animals
+    return totalAnimals
+}
+
+// Function to print the animal type and number of animals
+func printAnimalTypeAndCount(animalDict: [String]) {
+    // Check if the dictionary is empty
+    if dictionary.isEmpty {
+        print("Empty dictionary.")
+        return
+    }
+
+    // Iterate through the dictionary and print the type and count
+    for key in animalDict {
+        print("Animal type: " + key)
+        print("Number of animals: " + totalAnimals)
+    }
+}
