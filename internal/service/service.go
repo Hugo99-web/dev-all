@@ -35,3 +35,34 @@ func BenchmarkCountVowels(b int) {
 	// It will be a 10000-byte chunk of data.
 	// The performance is evaluated in milliseconds.
 	// The benchmark will be executed every 10000 milliseconds.
+package main
+
+// ItemCounter represents the count of each item in the inventory.
+type ItemCounter struct {
+	items: []string
+}
+
+// CountItem counts the occurrences of each item in the inventory.
+func (itemCount []string) CountItem(items []string) int {
+	counts := make([]*int, 0)
+	for item := range items {
+		counts = append(counts, itemCount[item])
+	}
+	return counts
+}
+
+// PrintItem counts the occurrences of each item in the inventory.
+func (itemCount []string) PrintItem(items []string) {
+	for _, item := range items {
+		fmt.Printf("%s: %d\n", item, itemCount[item])
+	}
+}
+
+// CountInventory returns the inventory counts.
+func CountInventory(inventory []string) int {
+	count := 0
+	for item := range inventory {
+		count += itemCount[item]
+	}
+	return count
+}
