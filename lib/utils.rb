@@ -48,3 +48,62 @@ player_location = "Lake"
 
 # Run the program
 treasure_hunt(player_location, treasure_box, nail, blanket, hat)
+class AverageCalculator
+  def calculate_average(numbers)
+    try
+      if numbers.empty?
+        print("No numbers provided.")
+        return 0.0
+      else
+        try
+          sum_numbers = numbers.sum
+          average = sum_numbers / len(numbers)
+          print("Average: #{average}")
+        else
+          print("No numbers provided.")
+        end
+      end
+    rescue
+      print("Invalid input. Please enter a list of numbers separated by spaces.")
+      return 0.0
+    end
+  end
+
+  def print_average
+    if average == 0.0
+      print("Average is 0.0")
+    else
+      puts "Average: #{average}"
+    end
+  end
+
+  def run_loop
+    try
+      if numbers.empty?
+        print("No numbers provided.")
+        return 0.0
+      else
+        try
+          sum_numbers = numbers.sum
+          average = sum_numbers / len(numbers)
+          puts "Average: #{average}"
+        else
+          print("No numbers provided.")
+        end
+      end
+    rescue
+      print("Invalid input. Please enter a list of numbers separated by spaces.")
+      return 0.0
+    end
+  end
+
+  # Example usage
+  # Get a list of numbers from the user
+  numbers = input("Enter a list of numbers separated by spaces: ")
+
+  # Calculate the average
+  average = calculate_average(numbers)
+
+  # Print the average
+  print_average
+end

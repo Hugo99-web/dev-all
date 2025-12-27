@@ -56,3 +56,7 @@ def gameLoop(): void {
   // Start the game loop
   game()
 }
+def calculateArea(length: Double, width: Double): Double =
+  if length <= 0 || width <= 0 then
+    return Double.NaN
+  return length * width
